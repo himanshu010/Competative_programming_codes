@@ -16,10 +16,7 @@ Output: Shortest distance to all vertices from src. If there is a negative weigh
 The idea of step 3 is, step 2 guarantees the shortest distances if the graph doesn’t contain a negative weight cycle. If we iterate through all edges one more time and get a shorter path for any vertex, then there is a negative weight cycle
 */
 
-#include <iostream>
-#include <list>
-#include <queue>
-#include <map>
+#include<bits/stdc++.h>
 #define inf 1e9
 using namespace std;
 

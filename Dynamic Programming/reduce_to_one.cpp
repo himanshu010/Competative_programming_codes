@@ -10,9 +10,9 @@ int reduce_to_one(int n){
     if(memo[n] != -1){
         return memo[n];
     }
-    int q1 = INT_MAX;
-    int q2 = INT_MAX;
-    int q3 = INT_MAX;
+  long  int q1 = INT_MAX;
+    long int q2 = INT_MAX;
+    long int q3 = INT_MAX;
     if(n%3 == 0) q1  = 1 + reduce_to_one(n/3);
     if(n%2 == 0) q2 = 1 + reduce_to_one(n/2);
     q3 = 1 + reduce_to_one(n-1);
